@@ -1,7 +1,8 @@
 {
-  "name": "gogo-react",
+  "name": "deb.io",
   "version": "4.2.6",
-  "description": "Gogo - React Bootstrap 4 Admin Dashboard Template",
+  "description": "portfolio",
+  "homepage": "https://debthornton.github.io/may-2022/works",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
@@ -12,6 +13,7 @@
     "classnames": "2.2.6",
     "firebase": "^7.4.0",
     "formik": "^1.5.1",
+    "gh-pages": "^3.2.3",
     "moment": "2.22.2",
     "mousetrap": "^1.6.3",
     "rc-slider": "^8.6.1",
@@ -51,6 +53,8 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
